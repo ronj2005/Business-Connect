@@ -1,0 +1,232 @@
+:root {
+    --primaryA: rgb(38, 38, 87);
+    --primaryB: #4378ce;
+    --secondaryA: rgb(177, 177, 180);
+    --secondaryB: rgb(24, 24, 42);
+    --secondaryC: white;
+  }
+
+.card-body-header {
+    /* border: red solid 2px; */
+    display: flex;
+    margin-top: 25px;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: auto;
+}
+
+.card-img {
+    border: rgb(38, 38, 87) solid 2px;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 15px;
+    width: 400px;
+    height: 275px;
+    overflow-x: auto;
+    overflow-y: auto;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.business-description {
+    /* border: red solid 2px; */
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 45px;
+    width: 450px;
+    font-size: .75em;
+}
+
+.business-card-main {
+    /* border: red solid 3px; */
+    background-color: var(--secondaryC);
+    font-size: 1.50em;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    height: fit-content;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+}
+
+.card-info-main {
+    /* border: red solid 3px;     */
+    display: flex;
+    margin-top: 45px;
+    flex-direction: column;
+    max-width: max-content;
+}
+
+.unfol-fol-btn {
+    /* border: red solid 3px; */
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 15px;
+}
+
+.follow-unfollow-btn {
+    /* border: red solid 3px; */
+    border: transparent;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    width: 100px;
+    color: var(--secondaryC);
+    background-color: var(--primaryA);
+    margin-left: 10px;
+}
+
+.follow-unfollow-btn:hover {
+    background-color: var(--primaryB);
+}
+
+.sb-edit-btn {
+    /* border: red solid 3px; */
+    border: transparent;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    width: 100px;
+    color: var(--secondaryC);
+    background-color: var(--primaryA);
+    margin-left: 10px;
+}
+
+.sb-edit-btn:hover {
+    background-color: var(--primaryB);
+}
+
+.leave-review-btn {
+    border: var(--primaryA) solid 3px;
+    background-color: var(--secondaryC);
+    color: var(--primaryA);
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.leave-review-btn:hover {
+    background-color: var(--primaryB);
+}
+
+.review-heading {
+    /* border: red solid 3px; */
+    background-color: var(--primaryA);
+    color: var(--secondaryC);
+    border-radius: 15px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+    font-size: 2em;
+    width: 100%;
+    height: max-content;
+    
+}
+
+.review-section {
+    border: var(--primaryA) solid 2px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: var(--secondaryC);
+    margin-top: 45px;
+    height: fit-content;
+    width: 700px;
+    border-radius: 5px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.list-container{
+    margin: 0;
+    margin-top: 30px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    font-size: 4em;
+}
+
+.review-list {
+    border: red solid 2px;
+    border: solid 2px var(--primaryA);
+    background-color: rgba(100, 148, 237, 0.096);
+    border-radius: 15px;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    height: fit-content;
+    padding: 25px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.review-list .card-title {
+    font-size: .5em;
+    text-decoration: underline;
+    color: var(--primaryA);
+}
+
+.review-list p {
+    font-size: .35em;
+    color: var(--primaryA);
+}
+
+@media (max-width: 834px) {
+    .card-img{
+        width: 350px;
+        height: 250px;
+    }
+    .card-info-main {
+        font-size: .75em;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .card-body-main {
+        font-size: .85em;
+    }
+}
+
+
+@media (max-width: 756px) {
+    .card-img{
+        width: 300px;
+        height: 200px;
+    }
+    .card-info-main {
+        font-size: .70em;
+    }
+}
+
+@media (max-width: 575px) {
+    .review-section {
+        width: 500px;
+    }
+}
