@@ -5,7 +5,6 @@ import { useMutation, useQuery } from "@apollo/client";
 import ReviewForm from "../../components/ReviewForm";
 import Review from "../../components/Review"
 import { FaStar } from "react-icons/fa";
-import businessImg from '../../images/lawn-care-gcf1748be3_1920.jpg';
 
 
 import "./index.css"
@@ -48,7 +47,7 @@ const SingleBusiness = () => {
         sumRatings += reviewsArr[i].rating;
     }
     averageRating = sumRatings/reviewsArr.length;
-  
+    console.log(data.business.image);
     averageRating = Math.floor(averageRating);
   }
 
@@ -79,7 +78,7 @@ const SingleBusiness = () => {
         <>
           <Card className="business-card-main" key={data.business._id}>
             <div className="card-body-header">
-              <CardImg className="card-img" width="100%" src={businessImg} alt="Business Image" />
+              <CardImg className="card-img" width="100%" src={data.business.image} alt="Business Image" />
               <Card.Text className="business-description">{data.business.description}</Card.Text>
             </div>
             <div className="card-info-main">
@@ -97,7 +96,6 @@ const SingleBusiness = () => {
               <Card.Text>{data.business.phoneNumber}</Card.Text>
             </div>
           </Card>
-
           <div className="unfol-fol-btn">
             {userData?.user?.myBusiness[0]?._id == id? <Button className="sb-edit-btn" as={Link} to={`/update/${id}`} >Edit</Button> : null}
             {following? 
